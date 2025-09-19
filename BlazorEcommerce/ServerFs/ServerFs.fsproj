@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+      
+<!--    <Compile Include="Models\Address\Address.fs" />  -->
+<!--    <Compile Include="Models\Address\Events.fs" />  -->
+<!--    <Compile Include="Models\Address\Commands.fs" />  -->
+<!--    <Compile Include="Models\CartItem\CartItem.fs" />-->
+<!--    <Compile Include="Models\CartItem\Events.fs" />-->
+<!--    <Compile Include="Models\CartItem\Commands.fs" />-->
+<!--    <Compile Include="Models\Category\Category.fs" />-->
+<!--    <Compile Include="Models\Category\Events.fs" />-->
+<!--    <Compile Include="Models\Category\Commands.fs" />-->
+<!--    <Compile Include="Models\Image\Image.fs" />-->
+<!--    <Compile Include="Models\Image\Events.fs" />-->
+<!--    <Compile Include="Models\Image\Commands.fs" />-->
+<!--    <Compile Include="Models\Product\Product.fs" />-->
+<!--    <Compile Include="Models\Product\Events.fs" />-->
+<!--    <Compile Include="Models\Product\Commands.fs" />-->
+<!--    <Compile Include="Models\ProductType\ProductType.fs" />-->
+<!--    <Compile Include="Models\ProductType\Events.fs" />-->
+<!--    <Compile Include="Models\ProductType\Commands.fs" />-->
+<!--    <Compile Include="Models\OrderItem\OrderItem.fs" />-->
+<!--    <Compile Include="Models\OrderItem\Events.fs" />-->
+<!--    <Compile Include="Models\OrderItem\Commands.fs" />-->
+<!--    <Compile Include="Models\Order\Order.fs" />-->
+<!--    <Compile Include="Models\Order\Events.fs" />-->
+<!--    <Compile Include="Models\Order\Commands.fs" />-->
+<!--    <Compile Include="Models\ProductVariant\ProductVariant.fs" />-->
+<!--    <Compile Include="Models\ProductVariant\Events.fs" />-->
+<!--    <Compile Include="Models\ProductVariant\Commands.fs" />-->
+<!--    <Compile Include="Models\User\User.fs" />-->
+<!--    <Compile Include="Models\User\Events.fs" />-->
+<!--    <Compile Include="Models\User\Commands.fs" />-->
+      
+    <Compile Include="Services\AuthService\IAuthService.fs" />
+    <Compile Include="Services\AuthService\AuthService.fs" />
+    <Compile Include="Services\AddressService\IAddressService.fs" />
+    <Compile Include="Services\AddressService\AddressService.fs" />
+    <Compile Include="Services\CartService\ICartService.fs" />
+    <Compile Include="Services\CartService\CartService.fs" />
+    <Compile Include="Services\CategoryService\ICategoryService.fs" />
+    <Compile Include="Services\CategoryService\CategoryService.fs" />
+    <Compile Include="Services\OrderService\IOrderService.fs" />
+    <Compile Include="Services\OrderService\OrderService.fs" />
+    <Compile Include="Services\PaymentService\IPaymentService.fs" />
+    <Compile Include="Services\PaymentService\PaymentService.fs" />
+    <Compile Include="Services\ProductService\IProductService.fs" />
+    <Compile Include="Services\ProductService\ProductService.fs" />
+    <Compile Include="Services\ProductTypeService\IProductTypeService.fs" />
+    <Compile Include="Services\ProductTypeService\ProductTypeService.fs" />
+    <Compile Include="Sample.fs" />
+    <Compile Include="Main.fs" />
+    <Content Include=".env" />
+    <Content Include="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Expecto" Version="10.*" />
+    <PackageReference Include="Sharpino" Version="4.4.0" />
+    <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.15.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Update="FSharp.Core" Version="9.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
+    <PackageReference Include="Stripe.net" Version="39.80.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedFs\SharedFs.fsproj" />
+  </ItemGroup>
+
+</Project>

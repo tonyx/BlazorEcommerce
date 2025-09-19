@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Models/Address/Address.fs" />
+    <Compile Include="Models/Address/Events.fs" />
+    <Compile Include="Models/Address/Commands.fs" />
+    <Compile Include="Models\CartItem\CartItem.fs" />
+    <Compile Include="Models\CartItem\Events.fs" />
+    <Compile Include="Models\CartItem\Commands.fs" />
+    <Compile Include="Models\Category\Category.fs" />
+    <Compile Include="Models\Category\Events.fs" />
+    <Compile Include="Models\Category\Commands.fs" />
+    <Compile Include="Models\Image\Image.fs" />
+    <Compile Include="Models\Image\Events.fs" />
+    <Compile Include="Models\Image\Commands.fs" />
+    <Compile Include="Models\ProductVariant\ProductVariant.fs" />
+    <Compile Include="Models\ProductVariant\Events.fs" />
+    <Compile Include="Models\ProductVariant\Commands.fs" />
+    <Compile Include="Models\Product\Product.fs" />
+    <Compile Include="Models\Product\Events.fs" />
+    <Compile Include="Models\Product\Commands.fs" />
+    <Compile Include="Models\ProductType\ProductType.fs" />
+    <Compile Include="Models\ProductType\Events.fs" />
+    <Compile Include="Models\ProductType\Commands.fs" />
+    <Compile Include="Models\OrderItem\OrderItem.fs" />
+    <Compile Include="Models\OrderItem\Events.fs" />
+    <Compile Include="Models\OrderItem\Commands.fs" />
+    <Compile Include="Models\Order\Order.fs" />
+    <Compile Include="Models\Order\Events.fs" />
+    <Compile Include="Models\Order\Commands.fs" />
+    <Compile Include="Models\User\User.fs" />
+    <Compile Include="Models\User\Events.fs" />
+    <Compile Include="Models\User\Commands.fs" />
+    <Compile Include="Library.fs" />
+    <Compile Include="ProductSearchResult.fs" />
+    <Compile Include="ServiceResponse.fs" />
+    <Compile Include="CartProductResponse.fs" />
+    <Compile Include="Aliases.fs" />
+    <Compile Include="OrderOverviewResponse.fs" />
+    <Compile Include="OrderDetailsProductResponse.fs" />
+    <Compile Include="OrderDetailsResponse.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Sharpino" Version="4.4.0" />
+  </ItemGroup>
+
+</Project>
